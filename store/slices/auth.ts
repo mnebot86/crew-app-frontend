@@ -20,6 +20,7 @@ const authSlice = createSlice({
 		setAuthState: (state, action) => {
 			state.isAuthenticated = action.payload.isAuthenticated;
 			state.token = action.payload.token;
+			state.user = action.payload.user;
 		},
 		clearAuthState: (state) => {
 			state.isAuthenticated = false;
